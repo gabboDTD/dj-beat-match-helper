@@ -1,0 +1,29 @@
+[project]
+name = "dj-beat-match-helper"
+version = "0.1.0"
+description = "Streamlit app to estimate BPM and suggest pitch for beat matching"
+authors = [
+    {name = "gabboDTD",email = "gabriele.spina@teamdigitale.governo.it"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+package-mode = false
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit (>=1.48.1,<2.0.0)",
+    "numba (==0.58.1)",
+    "soundfile (>=0.13.1,<0.14.0)",
+    "librosa (==0.10.2.post1)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+ruff = "^0.12.10"
+isort = "^6.0.1"
+mypy = "^1.17.1"
+
